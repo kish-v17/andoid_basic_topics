@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">All_in_1</string>
+    <string-array name="OP">
+        <item> Addition </item>
+        <item> Subtraction </item>
+        <item> Multiplication </item>
+        <item> Division </item>
+    </string-array>
+</resources>
