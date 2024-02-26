@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         toggle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                i=new Intent(getApplicationContext(), ToggleButton.class);
+                i=new Intent(getApplicationContext(), Menu.class);
                 startActivity(i);
             }
         });

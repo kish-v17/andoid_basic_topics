@@ -19,7 +19,7 @@
             android:name=".Alert"
             android:exported="false" />
         <activity
-            android:name=".toggleMenu"
+            android:name=".Menu"
             android:exported="false" />
         <activity
             android:name=".actionBar"
