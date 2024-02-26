@@ -43,11 +43,11 @@ public class Menu extends AppCompatActivity {
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
-        int itemId = item.getItemId();
-        if (itemId == R.id.lgt) {
+        int i = item.getItemId();
+        if (i == R.id.lgt) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
             return true;
-        } else if (itemId == R.id.drk) {
+        } else if (i == R.id.drk) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             return true;
         } else {
