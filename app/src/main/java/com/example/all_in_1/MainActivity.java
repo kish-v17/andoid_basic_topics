@@ -8,7 +8,7 @@ import android.widget.*;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-    Button bg,calc,vb,actv,lv,sp,ab,toggle,alert,rv;
+    Button bg,calc,vb,actv,lv,sp,ab,toggle,alert,rv,tblyt,wv,exInt;
     Intent i;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         toggle=findViewById(R.id.toggle);
         alert=findViewById(R.id.alert);
         rv=findViewById(R.id.rv);
+        tblyt=findViewById(R.id.tblyt);
+        wv=findViewById(R.id.wv);
+        exInt=findViewById(R.id.exInt);
 
         bg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +95,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 i=new Intent(getApplicationContext(), Recycler_view.class);
+                startActivity(i);
+            }
+        });
+        tblyt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                i=new Intent(getApplicationContext(), tabLayout.class);
+                startActivity(i);
+            }
+        });
+        wv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                i=new Intent(getApplicationContext(), webView.class);
+                startActivity(i);
+            }
+        });
+        exInt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                i=new Intent(getApplicationContext(), Explicit_intent.class);
                 startActivity(i);
             }
         });

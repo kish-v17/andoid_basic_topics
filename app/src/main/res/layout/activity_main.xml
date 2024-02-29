@@ -121,7 +121,37 @@
                 android:textSize="15dp"
                 android:textStyle="bold"
                 android:background="@drawable/noborder"
-                />
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/tblyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tab Layout"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/noborder"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/wv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web View"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/noborder"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/exInt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explisit Intent"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:background="@drawable/noborder"
+                android:layout_marginBottom="10dp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

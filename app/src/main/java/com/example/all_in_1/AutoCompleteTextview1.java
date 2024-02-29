@@ -37,7 +37,6 @@ public class AutoCompleteTextview1 extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 value1= a.getItem(position);
-
             }
         });
 
