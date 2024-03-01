@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:background="@drawable/bg"
     android:orientation="vertical"
     tools:context=".Explicit_intent">
 
@@ -17,6 +18,8 @@
         android:inputType="number"
         android:id="@+id/ed"
         android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:hint="Enter Phone"
         />
     <androidx.appcompat.widget.AppCompatButton
