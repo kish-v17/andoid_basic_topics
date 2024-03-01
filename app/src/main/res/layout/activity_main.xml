@@ -9,149 +9,157 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="700dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="40sp"
+        android:background="@drawable/border_card">
 
-        <LinearLayout
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:padding="40dp"
-            android:background="@drawable/border_card">
-
-            <Button
-                android:id="@+id/bg"
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="700sp"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideInset"
+            android:scrollbarSize="10sp">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Background"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp"
-                />
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Background"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp"
+                    />
 
-            <Button
-                android:id="@+id/calc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Calculator"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/calc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculator"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp" />
 
-            <Button
-                android:id="@+id/vb"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Viewbinding"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp"
-                />
+                <Button
+                    android:id="@+id/vb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Viewbinding"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp"
+                    />
 
-            <Button
-                android:id="@+id/actv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Autocomplte textview"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/actv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Autocomplte textview"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp" />
 
-            <Button
-                android:id="@+id/lv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Listview"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Listview"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp" />
 
-            <Button
-                android:id="@+id/sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Shared preference"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shared preference"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp" />
 
-            <Button
-                android:id="@+id/ab"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Action bar"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/ab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Action bar"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp" />
 
-            <Button
-                android:id="@+id/toggle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Toggle"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/toggle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Toggle"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp" />
 
-            <Button
-                android:id="@+id/alert"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Alert"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alert"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp" />
 
-            <Button
-                android:id="@+id/rv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Recycler view"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recycler view"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp"/>
 
-            <Button
-                android:id="@+id/tblyt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tab Layout"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/tblyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tab Layout"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp" />
 
-            <Button
-                android:id="@+id/wv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Web View"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/wv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Web View"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp" />
 
-            <Button
-                android:id="@+id/exInt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Explisit Intent"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:background="@drawable/noborder"
-                android:layout_marginBottom="10dp" />
-        </LinearLayout>
-    </ScrollView>
+                <Button
+                    android:id="@+id/exInt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Explisit Intent"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/noborder"
+                    android:layout_marginBottom="10sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 </LinearLayout>
