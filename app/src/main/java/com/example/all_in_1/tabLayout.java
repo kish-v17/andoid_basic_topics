@@ -4,11 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class tabLayout extends AppCompatActivity {
+import com.example.all_in_1.databinding.ActivityTabLayoutBinding;
 
+public class tabLayout extends AppCompatActivity {
+    ActivityTabLayoutBinding b;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tab_layout);
+        b= ActivityTabLayoutBinding.inflate(getLayoutInflater());
+        setContentView(b.getRoot());
+
+        ViewPagerManager vpm=new ViewPagerManager(getSupportFragmentManager());
+        b.vp.setAdapter(vpm);
+        b.tl.setupWithViewPager(b.vp);
+
     }
 }

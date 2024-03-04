@@ -10,23 +10,64 @@
     android:orientation="vertical"
     tools:context=".Explicit_intent">
 
-    <com.google.android.material.textfield.TextInputEditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:maxLength="10"
-        android:inputType="number"
-        android:id="@+id/ed"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:inputType="number"
+            android:id="@+id/ed"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Enter Phone"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/phone"
+            android:id="@+id/phone"
+            android:text="Phone"/>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:hint="Enter Phone"
+        android:hint="Enter email"
         />
-    <androidx.appcompat.widget.AppCompatButton
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sub"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Enter subject"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Enter body"
+        />
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/phone"
-        android:id="@+id/phone"
-        android:text="Phone"/>
-
+        android:drawableStart="@drawable/email"
+        android:id="@+id/send"
+        android:text="Email"/>
   </LinearLayout>

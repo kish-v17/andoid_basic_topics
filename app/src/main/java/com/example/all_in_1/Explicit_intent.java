@@ -26,5 +26,19 @@ public class Explicit_intent extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        b.send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Intent.ACTION_SEND);
+
+                i.putExtra(Intent.EXTRA_EMAIL,new String[]{b.email.getText().toString()});
+                i.putExtra(Intent.EXTRA_SUBJECT,b.sub.getText().toString());
+                i.putExtra(Intent.EXTRA_TEXT,b.txt.getText().toString());
+
+                i.setType("Message/rfc822");
+                startActivity(Intent.createChooser(i,"Hello"));
+            }
+        });
     }
 }
